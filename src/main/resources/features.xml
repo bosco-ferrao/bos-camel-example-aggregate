@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features>
+    <repository>mvn:org.apache.camel.karaf/apache-camel/${project.version}/xml/features</repository>
+
+    <feature name='bos-camel-example-aggregate' version='${project.version}'>
+        <feature version="${project.version}">camel</feature>
+        <feature version="${project.version}">camel-stream</feature>
+        <feature version="${project.version}">camel-hawtdb</feature>
+        <bundle>mvn:org.apache.camel/bos-camel-example-aggregate/${project.version}</bundle>
+    </feature>
+
+</features>
